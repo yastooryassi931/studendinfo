@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>show data</title>
+
+    <style>
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+    </style>
+</head>
+<body>
+
+<h1>Show All User Data</h1>
+
+<table style="width:100%">
+
+    <tr>
+        <th>User Picture</th>
+        <th>User Name</th>
+        <th>Last Name</th>
+        <th>City Name</th>
+        <th>Contact NUmber</th>
+        <th>Matric Marks</th>
+        <th>Inter Marks</th>
+        <th>Bachelor CGPA</th>
+    </tr>
+    {% for p in people %}
+    <tr>
+        <td>{% if p.picture%} <img src="{{ p.picture.url }}" style="height:180px"; width="180px"> {% endif%}</td>
+        <td>{{ p.name }}</td>
+        <td>{{ p.lastname }}</td>
+        <td>{{ p.city }}</td>
+        <td>{{ p.contact }}</td>
+        <td>{{ p.matricnumber }}</td>
+        <td>{{ p.internumber }}</td>
+        <td>{{ p.bachelorcgpa }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+</body>
+</html>

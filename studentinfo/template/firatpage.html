@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add information</title>
+</head>
+<body>
+
+<form method="post">
+    {% csrf_token %}
+    Enter First Name <input type="text" name="first_name" placeholder="first_name"required ><br><br>
+    Enter Last Name<input type="text" name="last_name" placeholder="last_name" required><br><br>
+    Enter username<input type="text" name="username" placeholder="username" required><br><br>
+    Enter Email<input type="email" name="email" placeholder="email" required><br><br>
+
+
+    <button class="btn" type="submit">Add</button>
+</form>
+
+
+
+</body>
+</html>

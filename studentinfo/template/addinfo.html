@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add information</title>
+
+
+
+</head>
+<body>
+
+<form method="post">
+{% csrf_token %}
+            Add Your Picture: <input type="file" name="picture" placeholder="picture" required><br><br>
+			Enter Your Name :  <input type="text" name="name" placeholder="name" required><br><br>
+            Enter Last Name :  <input type="text" name="lastname" placeholder="lastname" required><br><br>
+            Enter City Name :  <input type="text" name="city" placeholder="city" required><br><br>
+            Enter Contact Number :  <input type="number" name="contact" placeholder="contact" required><br><br>
+            Enter Matric Marks :  <input type="number" name="matricnumber" placeholder="matricnumber" required><br><br>
+            Enter Inter Marks :  <input type="number" name="internumber" placeholder="internumber" required><br><br>
+            Enter Bachelor Marks :  <input type="number" name="bachelorcgpa" placeholder="bachelorcgpa" required><br><br>
+            <button class="btn" type="submit">Submit</button>
+
+</form>
+
+
+</body>
+</html>
